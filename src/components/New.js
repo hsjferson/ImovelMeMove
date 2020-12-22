@@ -27,7 +27,7 @@ export default function New( props) {
             </View>
             <View style={styles.footer}>
                 <View style={{width:'80%'}}>
-                    <Text style={styles.price}> R$ 19.00.00</Text>    
+                    <Text style={styles.price}> R$ 1,500.00</Text>    
                 </View> 
                 <View>
                     <Ionicons name="ios-add-circle"    size={24} color="black" />       
@@ -62,8 +62,7 @@ const styles = StyleSheet.create({
         alignItems:"center",
         marginVertical:10,
     },
-    title: {
-        fontFamily:'Montserrat_700Bold',
+    title: { 
         fontSize:12,
         color:'#777'
     },
@@ -77,8 +76,7 @@ const styles = StyleSheet.create({
        color:'red',
        fontSize:9 
     },
-    description: {
-        fontFamily:'Montserrat_400Regular',
+    description: { 
         fontSize:12,
         color:'#777' 
     },
@@ -88,8 +86,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         width:'100%'
     },
-    price: {
-        fontFamily:'Montserrat_400Regular',
+    price: { 
         fontSize:15
     }
 })

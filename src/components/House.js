@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View , StyleSheet, Image} from 'react-native';
+import { Text, View , StyleSheet, Image} from 'react-native'; 
 
 export default function House({cover}) {
  return (
@@ -23,16 +23,16 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         width:260,
         height:70,
-        backgroundColor:'#eee',
-        elevation:5, //sonbrinha em baixo,
+        backgroundColor:'#fff',
+        elevation:2, //sonbrinha em baixo,
         padding:6,
         marginVertical:5,
         marginRight:20,
         marginLeft:2,
-        borderRadius:19
+        borderRadius:10
     },
     cover: {
-        borderRadius:19,
+        borderRadius:10,
         width:60,
         height:60, 
     } ,
@@ -43,11 +43,9 @@ const styles = StyleSheet.create({
         height:'100%'
     },
     description: {
-        fontSize:9, 
-        fontFamily:'Montserrat_500Medium',
+        fontSize:9,  
     },
     price: {
-        fontSize:12,
-        fontFamily:'Montserrat_700Bold',
+        fontSize:12, 
     }
 })

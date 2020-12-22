@@ -32,19 +32,19 @@ export default function Home() {
             </View>
             <ScrollView   horizontal={true} showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}} >
                  <New
-                  cover ={require('../assets/house1.jpg')}
+                  cover ={require('../assets/casacuritiba.jpg')}
                   name = {"Casa de praia"}
                   description = "Casa nova, uma casa no mar muito bonita para se viver"
                   onPress = {() => navigation.navigate('Detail')}
                  />
                  <New
-                  cover ={require('../assets/house2.jpg')}
+                  cover ={require('../assets/casafloripa.jpg')}
                   name = {"Casa FLoripa"}
                   description = "Casa nova, uma casa no mar muito bonita para se viver"
                   onPress = {() => {}}
                  />
                  <New
-                  cover ={require('../assets/house3.jpg')}
+                  cover ={require('../assets/casacuritiba.jpg')}
                   name = {"Casa Curitiba"}
                   description = "Casa nova, uma casa no mar muito bonita para se viver"
                   onPress = {() => {}}
@@ -56,39 +56,39 @@ export default function Home() {
                   onPress = {() => {}}
                  />
             </ScrollView>
-            
-            <ScrollView vertical showsHorizontalScrollIndicator={true} style={{paddingHorizontal:15}}> 
-                <View style={{flexDirection:'row' , alignItems:'center', marginBottom:10, }}>
-                    <Text style={[styles.title],{marginTop:20} }>Proximo de voçe</Text>
+            <View style={{flexDirection:'row' , alignItems:'center', margin:10, }}>
+                    <Text style={styles.title }>Proximo</Text>
                 </View>
+            <ScrollView vertical showsHorizontalScrollIndicator={true} style={{paddingHorizontal:15}}> 
+                 
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}>
                     <House
-                    cover={require('../assets/house4.jpg')}
+                    cover={require('../assets/house3.jpg')}
                     />
                     <House
-                    cover={require('../assets/house5.jpg')}
+                    cover={require('../assets/house1.jpg')}
                     />
                     <House
-                    cover={require('../assets/house6.jpg')}
+                    cover={require('../assets/casacuritiba.jpg')}
                     />
                 </ScrollView>
             </ScrollView>
-            <ScrollView>
-                <Text style={[styles.title],{marginTop:20} }>Dica do dia</Text>
-            </ScrollView>
+            <View style={{flexDirection:'row' , alignItems:'center', margin:10, }}>
+                <Text style={styles.title}>Dica do dia</Text>
+            </View>
             <ScrollView  horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}>
-                <Recommended
-                cover={require('../assets/house1.jpg')}
+                <Recommended  
+                cover={require('../assets/house6.jpg')}
                 house="Casa Floripa"
                 offer="20%"
                 />
                 <Recommended
-                cover={require('../assets/house4.jpg')}
+                cover={require('../assets/house2.jpg')}
                 house="Casa São Paulo"
                 offer="10%"
                 />
                 <Recommended
-                cover={require('../assets/house6.jpg')}
+                cover={require('../assets/casacuritiba.jpg')}
                 house="Casa Curitiba"
                 offer="15%"
                 
@@ -121,8 +121,7 @@ const styles = StyleSheet.create({
         borderColor:'#ccc',
         borderWidth:1
     },
-    input: {
-        fontFamily:'Montserrat_500Medium',
+    input: { 
         paddingHorizontal:10,
         fontSize:13,
         width:'90%', 
@@ -133,8 +132,9 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     title: {
-        paddingHorizontal:15,
+        paddingHorizontal:15,  
+        color:'#222',
         fontFamily:'Montserrat_700Bold'
-    }
+    }, 
 
 })

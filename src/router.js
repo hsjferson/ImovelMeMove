@@ -1,10 +1,9 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native'; 
 import { createStackNavigator } from '@react-navigation/stack'; 
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'; 
 import 'react-native-gesture-handler';  
-import { Feather} from '@expo/vector-icons'; 
-import { AppLoading } from 'expo'; 
+import React, { useState, useEffect } from 'react'; 
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';  
+import { Feather} from '@expo/vector-icons';  
 
 import Home from './pages/Home' ;
 import Detail from './pages/Detail'; 
@@ -22,8 +21,7 @@ function Routes() {
                 component={Home}
                 options={{
                     title:'Alug.me',
-                    headerTitleStyle:{
-                        fontFamily:'Montserrat_700Bold'
+                    headerTitleStyle:{ 
                     },
                     headerRight: () => ( 
                         <TouchableOpacity>
@@ -41,8 +39,7 @@ function Routes() {
                 component={Detail}
                 options={{
                     title:'Detalhe',
-                    headerTitleStyle:{
-                        fontFamily:'Montserrat_700Bold'
+                    headerTitleStyle:{ 
                     },
                     headerRight: () => ( 
                         <TouchableOpacity>

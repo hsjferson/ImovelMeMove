@@ -9,7 +9,11 @@ import { useFonts, Montserrat_400Regular,Montserrat_500Medium, Montserrat_700Bol
 import Routes from './src/router';
 
 export default function App() { 
-   
+   let [fontsLoaded] = useFonts({
+    Montserrat_500Medium,
+    Montserrat_400Regular,
+    Montserrat_700Bold
+   })
   return (
      < >
         <StatusBar style="light" backgroundColor="#000" translucent={false}/> 
